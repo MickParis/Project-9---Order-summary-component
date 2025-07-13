@@ -1,0 +1,176 @@
+:root {
+
+/* Primary */
+
+--Blue-100: hsl(225, 100%, 94%);
+--Blue-700: hsl(245, 75%, 52%);
+
+/* Neutral */
+
+--Blue-50: hsl(225, 100%, 98%);
+--Gray-600: hsl(224, 23%, 55%);
+--Blue-950: hsl(223, 47%, 23%);
+--White: hsl(0, 0%, 100%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Blue-100);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bg-image {
+    background: url('images/pattern-background-mobile.svg') no-repeat center/cover;
+    height: 25rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 1.375rem;
+    margin-bottom: 1rem;
+    color: var(--Blue-950);
+    font-weight: 900;
+}
+
+h4 {
+    color: var(--Blue-950)
+}
+
+p {
+    color: var(--Gray-600)
+}
+
+.hero-image {
+    width: 100%;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.card-container {
+    background-color: var(--White);
+    border-radius: 1.5rem;
+    margin: 1rem;
+    max-width: 20.5rem;
+}
+
+.card {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.card-text {
+    margin-bottom: 1.5rem;
+}
+
+.annual-plan {
+    background-color: var(--Blue-50);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.annual-plan article {
+    display: flex;
+    align-items: center
+}
+
+.music-icon {
+    margin-right: 1rem;
+}
+
+.annual-plan-text {
+    font-size: 0.875rem;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.bold {
+    font-weight: 900;
+    color: var(--Blue-950)
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.btn-change {
+    font-size: 0.8125rem;
+    color: var(--Blue-700);
+    text-decoration: underline;
+}
+
+.btn-change:hover {
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: var(--Blue-700);
+    color: var(--White);
+    font-size: 0.9375rem;
+    width: 100%;
+    padding: 1rem 0;
+    margin-bottom: 1.5rem;
+    border-radius: 0.8rem;
+    box-shadow: 15px 15px 20px hsl(245, 75%, 52%, 0.2);
+    letter-spacing: 0.03125rem;
+}
+
+.btn-secondary {
+    color: var(--Gray-600);
+    font-size: 0.9375rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn-secondary:hover {
+    color: var(--Blue-950);
+}
+
+.btn-primary:hover, 
+.btn-change:hover {
+    opacity: 0.8;
+}
+
+
+@media (min-width: 90rem) {
+    .card-container {
+        max-width: 28rem;
+    }
+
+    
+    .card {
+        padding: 2rem 3rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .annual-plan-text {
+        font-size: 1rem;
+    }
+
+    .btn-change {
+        font-size: 0.875rem;
+    }
+}
